@@ -24,14 +24,14 @@ and then just set the completion property with a block:
 
 ``` obj-c
 CABasicAnimation *zoomOutAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    zoomOutAnimation.fromValue = @1.2;
-    zoomOutAnimation.toValue = @1.0;
-    zoomOutAnimation.duration = 1.5f;
-    [zoomOutAnimation setCompletion:^(BOOL finished) {
+zoomOutAnimation.fromValue = @1.2;
+zoomOutAnimation.toValue = @1.0;
+zoomOutAnimation.duration = 1.5f;
+[zoomOutAnimation setCompletion:^(BOOL finished) {
         
-        // do whatever you wanna do after the animation finished
-        
-    }];
+	// do whatever you wanna do after the animation finished
+	
+}];
 ```
 That's it - pretty easy and straight forward.
 
