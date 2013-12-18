@@ -1,6 +1,6 @@
 # CAAnimationBlocksDemo
 
-Ralf Bernert
+Ralf Bernert | Senior Software Engineer
 
 Website: http://www.bernertmedia.com  
 Twitter: [@ralfbernert](http://twitter.com/ralfbernert)  
@@ -29,12 +29,9 @@ CABasicAnimation *zoomOutAnimation = [CABasicAnimation animationWithKeyPath:@"tr
     zoomOutAnimation.duration = 1.5f;
     [zoomOutAnimation setCompletion:^(BOOL finished) {
         
-        // do whatever you wanna do if the animation finished
+        // do whatever you wanna do after the animation finished
         
     }];
 ```
 That's it - pretty easy and straight forward.
 
-
-## iBeacon Scanner
-Please see another iBeacon project, the [iBeaconScanner](https://github.com/ralfbernert/iBeaconScanner) that shows all iBeacons in range ordered by proximity.
